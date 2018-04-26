@@ -1,10 +1,13 @@
-var connection = require("./connection.js");
+import { POINT_CONVERSION_UNCOMPRESSED } from "constants";
 
-module.exports = function(connection) {
-  //create the methods that will execute the necessary MySQL commands in
-  //the controllers. These are the methods you will need to use in order to retrieve and store data
-  //in your database.
-  //* `selectAll()` * `insertOne()` * `updateOne()`
-};
+var connection = require("../config/connection.js");
 
-//not sure if this is correct. May need to export each individ? I SUSPECT SO.
+//Object for all our SQL statement functions.
+var orm = {};
+
+module.exports = orm;
+
+//create the methods that will execute the necessary MySQL commands in
+//the controllers. These are the methods you will need to use in order to retrieve and store data
+//in your database.
+//* `selectAll()` * `insertOne()` * `updateOne()`
