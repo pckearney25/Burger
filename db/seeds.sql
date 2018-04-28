@@ -1,6 +1,6 @@
 INSERT INTO burgers
     (burger_name)
 VALUES
-    ("turkey burger with avocado"),
-    ("classic cheeseburger"),
-    ("mushroom & swiss beef burger");
+    ("Turkey burger with avocado"),
+    ("Classic cheeseburger"),
+    ("Mushroom & Swiss burger");

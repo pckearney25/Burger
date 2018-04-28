@@ -1,0 +1,51 @@
+h1,
+h3,
+button {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+}
+h1 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+#header-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#lists-row {
+  margin-bottom: 20px;
+}
+
+.list-group {
+  list-style: decimal inside;
+}
+
+.list-group-item {
+  display: list-item;
+}
+
+.devour-it {
+  font-size: 15px;
+}
+
+.fa-utensils {
+  margin-right: 8px;
+}
