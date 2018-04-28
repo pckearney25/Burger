@@ -7,9 +7,6 @@ function objToSql(ob) {
   // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
     var value = ob[key];
-    console.log(ob);
-    console.log(key);
-    console.log(value);
 
     // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
@@ -35,7 +32,6 @@ var orm = {
       if (err) {
         throw err;
       }
-      console.log("data selected from the db.");
       modCBF(result);
     });
   },
@@ -56,14 +52,11 @@ var orm = {
       if (err) {
         throw err;
       }
-
       modCBF(result);
     });
   },
 
   updateOne: function(table, objColVals, condition, modCBF) {
-    console.log(objToSql(objColVals));
-
     var queryString = "UPDATE " + table;
     queryString += " SET ";
     queryString += objToSql(objColVals);
@@ -75,7 +68,6 @@ var orm = {
       if (err) {
         throw err;
       }
-
       modCBF(result);
     });
   }
