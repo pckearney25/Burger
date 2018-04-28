@@ -1,9 +1,23 @@
 var orm = require("../config/orm.js");
 
 var burger = {
-  all: function() {},
-  create: function() {},
-  update: function() {}
+  selectAll: function(contCBF) {
+    orm.selectAll("burgers", function(res) {
+      console.log("Back and out through the model.");
+      contCBF(res);
+    });
+  },
+  insertOne: function(col, val, contCBF) {
+    orm.insertOne("burgers", col, val, function(res) {
+      console.log("Back and out through the model.");
+      contCBF(res);
+    });
+  },
+  updateOne: function(objColVals, condition, contCBF) {
+    orm.updateOne("burgers", objColVals, condition, function(res) {
+      contCBF(res);
+    });
+  }
 };
 
 module.exports = burger;
