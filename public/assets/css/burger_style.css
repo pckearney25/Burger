@@ -42,7 +42,8 @@ img {
   display: list-item;
 }
 
-.devour-it {
+.devour-it,
+#add-burger-btn {
   font-size: 15px;
 }
 
